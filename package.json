@@ -1,0 +1,21 @@
+{
+  "name": "kronograph",
+  "version": "0.0.1",
+  "description": "Modular event scheduler in nodejs ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "scheduler",
+    "cron",
+    "async",
+    "events",
+    "actions"
+  ],
+  "author": "francoispqt",
+  "license": "ISC",
+  "dependencies": {
+    "moment-timezone": "^0.5.13"
+  }
+}
