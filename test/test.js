@@ -6,7 +6,7 @@ const tz = 'Europe/Paris';
 
 const Kronograph = require('../lib/kronograph-engine')({
     tz,
-    interval: 60000
+    interval: 1000
 });
 
 const now = moment.tz(tz);
@@ -14,7 +14,8 @@ const now = moment.tz(tz);
 Kronograph.addAction('testAction', (rule, done) => {
     let rT = moment.tz(tz);
     try {
-        assert(rT.diff(now, 'minutes') === 1);
+        console.log(rT.diff(now, 'seconds'));
+        assert(rT.diff(now, 'seconds') === 60);
         console.log('\o/ Test succesful !');
         process.exit(0);
     } catch(err) {
@@ -27,9 +28,8 @@ Kronograph.addAction('testAction', (rule, done) => {
 
 Kronograph.addRule({
     name : 'testRule',
-    calendar: 'daily',
-    hour: moment.tz(tz).hour(),
-    minutes: moment.tz(tz).add(1, 'minutes').minutes(),
+    calendar: 'interval',
+    interval: 60,
     action: 'testAction',
     active: true,
 });
