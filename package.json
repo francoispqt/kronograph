@@ -14,7 +14,7 @@
     "actions"
   ],
   "author": "francoispqt",
-  "license": "ISC",
+  "license": "Apache-2",
   "dependencies": {
     "moment-timezone": "^0.5.13"
   }
