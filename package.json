@@ -1,6 +1,6 @@
 {
   "name": "kronograph",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Modular event scheduler in nodejs ",
   "main": "index.js",
   "scripts": {
