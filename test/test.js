@@ -4,7 +4,7 @@ const moment = require('moment-timezone');
 const assert = require('assert');
 const tz = 'Europe/Paris';
 
-const Kronograph = require('../lib/kronograph-engine')({
+const Kronograph = require('../')({
     tz,
     interval: 1
 });

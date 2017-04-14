@@ -4,7 +4,7 @@
   "description": "Modular event scheduler in nodejs ",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "node test/test"
   },
   "keywords": [
     "scheduler",

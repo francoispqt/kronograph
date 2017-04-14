@@ -1,4 +1,4 @@
 'use strict';
 
 
-module.exports = require('./lib/kairos-engine');
+module.exports = require('./lib/kronograph-engine');
